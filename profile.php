@@ -2,10 +2,10 @@
 session_start();
 $currentUser = $_SESSION['user'];
 
-$servername = "localhost";
-$username = "id19128965_dewaldbekker";
-$password = "6bF$%A/RQSJN)D>D";
-$database = "id19128965_eduquiz";
+$servername = "";
+$username = "";
+$password = "";
+$database = "";
 
 //create connection
  $conn = new mysqli($servername, $username, $password, $database);
