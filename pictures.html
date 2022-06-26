@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduQuiz</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="pictures.css">
+        <style type="text/css">.disclaimer { display: none; }</style>
+  </head>
+  <body>
+    <div class="container pictures">
+    <div class="flex-fix">
+    <div id="home" class="flex-center flex-column">
+        <h1>Choose a profile picture</h1>
+        <table>
+            <tr>
+            <td><a class="image" data-img="1"><img src="https://i.imgur.com/G1kXyhJ.png"></a></td>  
+            <td><a class="image" data-img="2"><img src="https://i.imgur.com/I2A8so0.png"></a></td>
+            </tr>
+            <tr>
+            <td><a class="image" data-img="3"><img src="https://i.imgur.com/EL7hpXQ.png"></a></td>  
+            <td><a class="image" data-img="4"><img src="https://i.imgur.com/kBuLZxc.png"></a></td>
+            </tr>
+            <tr>
+            <td><a class="image" data-img="5"><img src="https://i.imgur.com/kepTeH5.png"></a></td>  
+            <td><a class="image" data-img="6"><img src="https://i.imgur.com/S3Ppap5.png"></a></td>
+            </tr>
+            <tr>
+            <td><a class="image" data-img="7"><img src="https://i.imgur.com/S2jQkso.jpg"></a></td>  
+            <td><a class="image" data-img="8"><img src="https://i.imgur.com/RGyICVZ.png"></a></td>
+            </tr>
+            <tr>
+            <td><a class="image" data-img="9"><img src="https://i.imgur.com/z7F6Nt8.jpg"></a></td>  
+            <td><a class="image" data-img="10"><img src="https://i.imgur.com/VmQicME.jpg"></a></td>
+            </tr>
+            
+        </table>
+      </div>
+      </div>
+    </div>
+    <script>
+        
+       const images = Array.from(document.getElementsByClassName("image"));
+        
+images.forEach((img => {
+    img.addEventListener('click', (e) => {
+        console.log(e.target);
+        if(img.getAttribute("data-img")!=null){
+           window.location.href= "profile.php?image=" +img.getAttribute("data-img");
+        }
+
+    });
+})); 
+        
+        
+    </script>
+  </body>
+</html>
