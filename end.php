@@ -27,10 +27,10 @@ session_start();
 
 
 <?php
-$servername = "localhost";
-$username = "id19128965_dewaldbekker";
-$password = "6bF$%A/RQSJN)D>D";
-$database = "id19128965_eduquiz";
+$servername = "";
+$username = "";
+$password = "";
+$database = "";
 
 
 //create connection
